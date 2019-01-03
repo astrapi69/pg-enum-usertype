@@ -11,7 +11,7 @@
 	</parent>
 
 	<artifactId>pg-enum-usertype</artifactId>
-	<version>1-SNAPSHOT</version>
+	<version>1</version>
 	<inceptionYear>2019</inceptionYear>
 
 	<name>${project.artifactId}</name>
