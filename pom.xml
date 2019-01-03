@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>de.alpharogroup</groupId>
+		<artifactId>mvn-java-parent</artifactId>
+		<version>4.5</version>
+		<relativePath></relativePath>
+	</parent>
+
+	<artifactId>pg-enum-usertype</artifactId>
+	<version>1-SNAPSHOT</version>
+	<inceptionYear>2019</inceptionYear>
+
+	<name>${project.artifactId}</name>
+
+	<description>
+		This project holds view model classes for resource bundles objects
+	</description>
+
+	<url>https://github.com/astrapi69/${project.artifactId}</url>
+
+	<properties>
+		<!-- HIBERNATE versions -->
+		<hibernate.version>5.4.0.Final</hibernate.version>
+		<!-- POSTGRESQL version -->
+		<postgresql.version>42.2.4</postgresql.version>
+	</properties>	
+
+	<developers>
+
+		<developer>
+			<id>astrapi69</id>
+			<name>Asterios Raptis</name>
+			<roles>
+				<role>Project manager</role>
+				<role>Developer</role>
+			</roles>
+			<timezone>Berlin</timezone>
+		</developer>
+
+	</developers>
+
+	<scm>
+		<connection>scm:git:git:@github.com:astrapi69/${project.artifactId}.git</connection>
+		<developerConnection>scm:git:git@github.com:astrapi69/${project.artifactId}.git</developerConnection>
+		<url>git:@github.com:astrapi69/${project.artifactId}.git</url>
+	</scm>
+
+	<issueManagement>
+		<system>github.com</system>
+		<url>https://github.com/astrapi69/${project.artifactId}/issues</url>
+	</issueManagement>
+	
+	<dependencyManagement>
+	
+		<dependencies>
+		
+			<!-- HIBERNATE DEPENDENCIES -->
+			<dependency>
+				<groupId>org.hibernate</groupId>
+				<artifactId>hibernate-core</artifactId>
+				<version>${hibernate.version}</version>
+			</dependency>
+			<!-- POSTGRESQL DEPENDENCIES -->
+			<dependency>
+				<groupId>org.postgresql</groupId>
+				<artifactId>postgresql</artifactId>
+				<version>${postgresql.version}</version>
+			</dependency>
+		
+		</dependencies>
+		
+	
+	</dependencyManagement>
+
+	<dependencies>
+		<!-- HIBERNATE DEPENDENCIES -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+		</dependency>
+		<!-- POSTGRESQL DEPENDENCIES -->
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+		</dependency>
+
+	</dependencies>
+
+</project>
