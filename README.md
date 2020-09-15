@@ -10,7 +10,8 @@
 
 </div>
 
-This project holds view model classes for resource bundles objects
+This project holds the class PGEnumUserType for custom user type that maps string to enum and back. 
+Note: Can be used only with Postgres database and hibernate
 
 ## License
 

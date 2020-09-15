@@ -1,7 +1,7 @@
 /**
  * The MIT License
  *
- * Copyright (C) 2019 Asterios Raptis
+ * Copyright (C) 2015 Asterios Raptis
  *
  * Permission is hereby granted, free of charge, to any person obtaining
  * a copy of this software and associated documentation files (the
@@ -32,6 +32,7 @@ import java.sql.Types;
 import java.util.Objects;
 import java.util.Properties;
 import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import de.alpharogroup.db.DatabaseDefaults;
 import org.hibernate.HibernateException;
@@ -39,8 +40,6 @@ import org.hibernate.engine.spi.SharedSessionContractImplementor;
 import org.hibernate.usertype.EnhancedUserType;
 import org.hibernate.usertype.ParameterizedType;
 import org.postgresql.util.PGobject;
-
-import lombok.extern.java.Log;
 
 /**
  * The class {@link PGEnumUserType} maps string to enum and back. Can be used only with Postgres
@@ -50,9 +49,10 @@ import lombok.extern.java.Log;
  *
  * @author Asterios Raptis
  */
-@Log
 public class PGEnumUserType implements EnhancedUserType, ParameterizedType
 {
+
+	private static final Logger log = Logger.getLogger(PGEnumUserType.class.getName());
 
 	/** The Constant INSTANCE. */
 	public static final PGEnumUserType INSTANCE = new PGEnumUserType();
