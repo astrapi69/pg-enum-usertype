@@ -4,6 +4,9 @@
 Version 1.1-SNAPSHOT
 -------------
 
+ADDED:
+ 
+- new enum DatabaseDefaults for default parameter names and values
 
 Version 1
 -------------

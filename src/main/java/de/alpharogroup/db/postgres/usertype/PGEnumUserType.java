@@ -33,6 +33,7 @@ import java.util.Objects;
 import java.util.Properties;
 import java.util.logging.Level;
 
+import de.alpharogroup.db.DatabaseDefaults;
 import org.hibernate.HibernateException;
 import org.hibernate.engine.spi.SharedSessionContractImplementor;
 import org.hibernate.usertype.EnhancedUserType;
@@ -247,7 +248,7 @@ public class PGEnumUserType implements EnhancedUserType, ParameterizedType
 	@Override
 	public void setParameterValues(Properties parameters)
 	{
-		final String enumClassName = parameters.getProperty("enumClassName");
+		final String enumClassName = parameters.getProperty(DatabaseDefaults.ENUM_CLASS_NAME);
 		try
 		{
 			enumClass = (Class<Enum>)Class.forName(enumClassName);

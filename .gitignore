@@ -11,6 +11,8 @@
 !.idea/runConfigurations
 .idea/inspectionProfiles
 .idea/libraries
+.idea/dataSources
+.idea/**
 .idea/*.*
 
 #################
