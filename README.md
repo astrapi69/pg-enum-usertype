@@ -54,11 +54,11 @@ and then add the dependency to the dependencies area
 ## Maven dependency
 
 Maven dependency is now on sonatype.
-Check out 
-[sonatype repository](https://oss.sonatype.org/index.html#nexus-search;gav~io.github.astrapi69~pg-enum-usertype~~~) 
+Check out
+[sonatype repository](https://oss.sonatype.org/index.html#nexus-search;gav~io.github.astrapi69~pg-enum-usertype~~~)
 for latest snapshots and releases.
 
-Add the following maven dependency to your project `pom.xml` if you want to import the core functionality of 
+Add the following maven dependency to your project `pom.xml` if you want to import the core functionality of
 pg-enum-usertype:
 
 Than you can add the dependency to your dependencies:
@@ -89,17 +89,17 @@ Release version numbers will be incremented in the following format:
 
 `<major>.<minor>.<patch>`
 
-For detailed information on versioning for this project you can visit this 
+For detailed information on versioning for this project you can visit this
 [wiki page](https://github.com/lightblueseas/mvn-parent-projects/wiki/Simplified-Semantic-Versioning).
 
 # Donations
 
-This project is kept as an open source product and relies on contributions to remain being developed. If you like this 
+This project is kept as an open source product and relies on contributions to remain being developed. If you like this
 library, please consider a donation
 
 over paypal: <br><br>
 <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MJ7V43GU2H386" target="_blank">
-<img src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif" alt="PayPal this" 
+<img src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif" alt="PayPal this"
 title="PayPal – The safer, easier way to pay online!" style="border: none" />
 </a>
 <br><br>
