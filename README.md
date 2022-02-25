@@ -36,13 +36,13 @@ to your project `build.gradle` if you want to import the core functionality of p
 define version in file gradle.properties
 
 ```
-pgEnumUsertypeVersion=1.1
+pgEnumUsertypeVersion=1.2
 ```
 
 or in build.gradle ext area
 
 ```
-    pgEnumUsertypeVersion = "1.1"
+    pgEnumUsertypeVersion = "1.2"
 ```
 
 and then add the dependency to the dependencies area
@@ -66,7 +66,7 @@ Than you can add the dependency to your dependencies:
     <properties>
             ...
         <!-- PG-ENUM-USERTYPE version -->
-        <pg-enum-usertype.version>1.1</pg-enum-usertype.version>
+        <pg-enum-usertype.version>1.2</pg-enum-usertype.version>
             ...
     </properties>
             ...
