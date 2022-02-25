@@ -22,7 +22,7 @@
  * OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
-package de.alpharogroup.db.postgres.usertype;
+package io.github.astrapi69.db.postgres.usertype;
 
 import java.io.Serializable;
 import java.sql.PreparedStatement;
@@ -34,7 +34,7 @@ import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import de.alpharogroup.db.DatabaseDefaults;
+import io.github.astrapi69.db.DatabaseDefaults;
 import org.hibernate.HibernateException;
 import org.hibernate.engine.spi.SharedSessionContractImplementor;
 import org.hibernate.usertype.EnhancedUserType;

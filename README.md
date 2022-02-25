@@ -2,15 +2,15 @@
 
 <div align="center">
 
-[![Build Status](https://travis-ci.org/astrapi69/pg-enum-usertype.svg?branch=master)](https://travis-ci.org/astrapi69/pg-enum-usertype) 
-[![Open Issues](https://img.shields.io/github/issues/astrapi69/pg-enum-usertype.svg?style=flat)](https://github.com/astrapi69/pg-enum-usertype/issues) 
+[![Build Status](https://travis-ci.org/astrapi69/pg-enum-usertype.svg?branch=master)](https://travis-ci.org/astrapi69/pg-enum-usertype)
+[![Open Issues](https://img.shields.io/github/issues/astrapi69/pg-enum-usertype.svg?style=flat)](https://github.com/astrapi69/pg-enum-usertype/issues)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/de.alpharogroup/pg-enum-usertype/badge.svg)](https://maven-badges.herokuapp.com/maven-central/de.alpharogroup/pg-enum-usertype)
 [![Javadocs](http://www.javadoc.io/badge/de.alpharogroup/pg-enum-usertype.svg)](http://www.javadoc.io/doc/de.alpharogroup/pg-enum-usertype)
 [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat)](http://opensource.org/licenses/MIT)
 
 </div>
 
-This project holds the class PGEnumUserType for custom user type that maps string to enum and back. 
+This project holds the class PGEnumUserType for custom user type that maps string to enum and back.
 Note: Can be used only with Postgres database and hibernate
 
 ## License
@@ -26,23 +26,23 @@ Add the following maven dependency to your project `pom.xml` if you want to impo
 
 Than you can add the dependency to your dependencies:
 
-	<properties>
-			...
-		<!-- PG-ENUM-USERTYPE version -->
-		<pg-enum-usertype.version>1.1</pg-enum-usertype.version>
-			...
-	</properties>
-			...
-		<dependencies>
-			...
-			<!-- PG-ENUM-USERTYPE DEPENDENCY -->
-			<dependency>
-				<groupId>de.alpharogroup</groupId>
-				<artifactId>pg-enum-usertype</artifactId>
-				<version>${pg-enum-usertype.version}</version>
-			</dependency>
-			...
-		</dependencies>
+    <properties>
+            ...
+        <!-- PG-ENUM-USERTYPE version -->
+        <pg-enum-usertype.version>1.1</pg-enum-usertype.version>
+            ...
+    </properties>
+            ...
+        <dependencies>
+            ...
+            <!-- PG-ENUM-USERTYPE DEPENDENCY -->
+            <dependency>
+                <groupId>de.alpharogroup</groupId>
+                <artifactId>pg-enum-usertype</artifactId>
+                <version>${pg-enum-usertype.version}</version>
+            </dependency>
+            ...
+        </dependencies>
 
 ## Semantic Versioning
 
