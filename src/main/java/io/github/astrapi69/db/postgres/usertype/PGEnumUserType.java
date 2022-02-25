@@ -22,7 +22,7 @@
  * OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
-package de.alpharogroup.db.postgres.usertype;
+package io.github.astrapi69.db.postgres.usertype;
 
 import java.io.Serializable;
 import java.sql.PreparedStatement;
@@ -34,12 +34,13 @@ import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import de.alpharogroup.db.DatabaseDefaults;
 import org.hibernate.HibernateException;
 import org.hibernate.engine.spi.SharedSessionContractImplementor;
 import org.hibernate.usertype.EnhancedUserType;
 import org.hibernate.usertype.ParameterizedType;
 import org.postgresql.util.PGobject;
+
+import io.github.astrapi69.db.DatabaseDefaults;
 
 /**
  * The class {@link PGEnumUserType} maps string to enum and back. Can be used only with Postgres
@@ -52,11 +53,9 @@ import org.postgresql.util.PGobject;
 public class PGEnumUserType implements EnhancedUserType, ParameterizedType
 {
 
-	private static final Logger log = Logger.getLogger(PGEnumUserType.class.getName());
-
 	/** The Constant INSTANCE. */
 	public static final PGEnumUserType INSTANCE = new PGEnumUserType();
-
+	private static final Logger log = Logger.getLogger(PGEnumUserType.class.getName());
 	/** The enum class. */
 	@SuppressWarnings("rawtypes")
 	private Class<Enum> enumClass;

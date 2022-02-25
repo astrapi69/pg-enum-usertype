@@ -9,9 +9,9 @@ name: Java CI with Gradle
 
 on:
   push:
-    branches: [ master ]
+    branches: [ develop ]
   pull_request:
-    branches: [ master ]
+    branches: [ develop ]
 
 jobs:
   build:
@@ -32,3 +32,4 @@ jobs:
       env:
         ossrhUsername: ${{secrets.OSSRHUSERNAME}}
         ossrhPassword: ${{secrets.OSSRHPASSWORD}}
+    - uses: codecov/codecov-action@v2
